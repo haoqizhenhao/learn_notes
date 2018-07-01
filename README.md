@@ -27,3 +27,5 @@ print("Y = " + str(np.squeeze(Y_train_orig[:,index])))
 img_path = 'images/my_image.jpg'
 img = image.load_img(img_path, target_size=(64, 64))
 imshow(img)
+* K.learning_phase()
+返回训练模式/测试模式的flag，该flag是一个用以传入Keras模型的标记，以决定当前模型执行于训练模式下还是测试模式下.
