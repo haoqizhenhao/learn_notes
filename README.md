@@ -17,13 +17,13 @@ tf.matmul():矩阵乘法
 
 # matplotlib
 * 图片显示
-index = 11
+ index = 11
 plt.imshow(X_train_orig[index])
 print("Y = " + str(np.squeeze(Y_train_orig[:,index])))
 
 # keras
 * 打开图片
-from keras.preprocessing import image
+#from keras.preprocessing import image
 img_path = 'images/my_image.jpg'
 img = image.load_img(img_path, target_size=(64, 64))
 imshow(img)
