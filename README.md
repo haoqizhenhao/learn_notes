@@ -11,3 +11,5 @@ np.pad（）常用与深度学习中的数据预处理，可以将numpy数组按
 tf.matmul():矩阵乘法
 
 * np.multiply() 元素乘法
+
+*np.squeeze() 可以直接进行压缩维度
