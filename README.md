@@ -23,13 +23,14 @@ print("Y = " + str(np.squeeze(Y_train_orig[:,index])))
 
 # keras
 * 打开图片
-from keras.preprocessing import image
-from matplotlib.pyplot import imshow
-img_path = 'images/my_image.jpg'
-img = image.load_img(img_path, target_size=(64, 64))
-imshow(img)
-* K.learning_phase()
-返回训练模式/测试模式的flag，该flag是一个用以传入Keras模型的标记，以决定当前模型执行于训练模式下还是测试模式下.
+from keras.preprocessing import image  
+from matplotlib.pyplot import imshow  
+img_path = 'images/my_image.jpg'  
+img = image.load_img(img_path, target_size=(64, 64))  
+imshow(img)  
+* K.learning_phase()  
+返回训练模式/测试模式的flag，该flag是一个用以传入Keras模型的标记，以决定当前模型执行于训练模式下还是测试模式下.  
 
 # tensorflow
-keras与tensorflow联合编程
+keras与tensorflow联合编程  
+tf.cast(x, dtype, name=None)  将x的数据格式转化成dtype
