@@ -38,11 +38,11 @@ tf.cast(x, dtype, name=None)  将x的数据格式转化成dtype
 # os.path  
 os.path包含了很多文件、文件夹操作的方法。下面列出：
 
-os.path.abspath(path) #返回绝对路径
-os.path.basename(path) #返回文件名
-os.path.commonprefix(list) #返回多个路径中，所有path共有的最长的路径。
-os.path.dirname(path) #返回文件路径
-os.path.exists(path)  #路径存在则返回True,路径损坏返回False
+os.path.abspath(path) #返回绝对路径  
+os.path.basename(path) #返回文件名  
+os.path.commonprefix(list) #返回多个路径中，所有path共有的最长的路径。  
+os.path.dirname(path) #返回文件路径  
+os.path.exists(path)  #路径存在则返回True,路径损坏返回False  
 os.path.lexists  #路径存在则返回True,路径损坏也返回True
 os.path.expanduser(path)  #把path中包含的"~"和"~user"转换成用户目录
 os.path.expandvars(path)  #根据环境变量的值替换path中包含的”$name”和”${name}”
