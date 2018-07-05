@@ -1,5 +1,5 @@
 import tensorflow as tf
-
+tf.reset_default_graph()  ##重新启动graph
 # 设置动态分配GPU内存
 gpu_options=tf.GPUOptions(per_process_gpu_memory_fraction=0.1)
 config=tf.ConfigProto(gpu_options=gpu_options)
