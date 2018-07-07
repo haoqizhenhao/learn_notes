@@ -69,3 +69,21 @@ os.path.splitext(path)  #分割路径，返回路径名和文件扩展名的元�
 os.path.splitunc(path)  #把路径分割为加载点与文件  
 os.path.walk(path, visit, arg)  #遍历path，进入每个目录都调用visit函数，visit函数必须有3个参数(arg, dirname, names)，dirname表示当前目录的目录名，names代表当前目录下的所有文件名，args则为walk的第三个参数  
 os.path.supports_unicode_filenames  #设置是否支持unicode路径名  
+
+# linux
+ls，查看当前目录，ll -t，可以按照时间排序，添加 -a 参数，可以查看隐藏文件，有时候出现莫名其妙的 bug 的时候很有用。另外，常用 ls * | wc 命令统计当前目录下面的文件数量，* 表示所有文件，根据实际使用情况可以灵活使用。  
+cd，用于切换当前目录，可以是绝对路径，也可以是相对路径，./ 代表当前目录，../ 代表上级目录，cd -，可以切换为上一次使用的目录。  
+du，计算目录大小的命令，添加 -h 命令可以按照人们熟悉的 K、M、G 的方式来显示大小。  
+cp，文件拷贝，添加 -r 可以拷贝文件夹；mv，文件重名与移动；mv src dst，如果 dst 是文件，则是重命名，如果是目录，则是移动。  
+pwd，查看当前路径，这个在移动一些数据集或者整理文件 list 的时候会非常有用。  
+locate，find，用于查找某一个文件，具体的参数可以自己去查询。  
+rm，删除文件，添加 -r 可以删除目录，该操作要慎用，尤其是注意后面的目录，类似于 sudo rm –rf / 这样的操作，会让你体会到什么叫绝望。  
+kill，ps，进程管理相关，常用于批量杀死进程。比如这一条命令，可以杀死所有 caffe 进程：ps -ef | grep caffe | awk '{print $2}' | xargs kill -9。  
+tar，unzip 文件解压缩命令。tar –cvf test.tar test 用于压缩，tar –xvf test.tar 用于解压，unzip test.zip 用于解压，zip –r test.zip test 用于压缩，更多内容可自行查阅学习。  
+cat，用于显示文件内容及拼接文件。cat test.txt 会将内容显示到终端，cat test1.txt test2.txt >combine.txt，则用于拼接文件。  
+chmod，chown：前者用于改变文件权限，后者用于改变文件所有者。  
+gcc、g++、cmake、C 语言编译命令，需要额外学习。  
+vim ，linux与 Windows 的最大不同是，通常不再使用 IDE，取而代之的是用文本编辑器，其中 VIM 是一个非常优秀而强大的工具，常用的命令有 /test，匹配寻找 test。%s/a/b，替换 a 字符为 b，gg 跳到行首，GG 跳到行尾，dd 删除行，yy 复制行，v 复制范围，Ctrl+V，列编辑模式，更多的内容可以专门开篇学习。  
+git，该命令是项目管理必备的，基本命令要熟悉；git clone，拷贝项目；git add，添加文件；git commit，提交修改说明；git push，正式提交代码；git pull，拉取远程代码。  
+ssh，远程服务器连接，scp 远程和本地机器文件拷贝。  
+Shell 脚本编程，我们经常需要用 Shell 脚本批量处理，所以 Shell 的编程也需要学习。  
