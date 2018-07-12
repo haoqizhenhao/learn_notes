@@ -1,5 +1,6 @@
 # learn_notes
-
+## W3C SCHOOL 词典  
+https://www.w3cschool.cn/dict/  
 # numpy
 e=np.eye(3);e
 array([[ 1.,  0.,  0.],
@@ -36,6 +37,8 @@ keras与tensorflow联合编程
 tf.cast(x, dtype, name=None)  将x的数据格式转化成dtype  
 * Tensorflow一些常用基本概念与函数  
 https://blog.csdn.net/lenbow/article/details/52152766  
+* 速查词典  
+https://www.w3cschool.cn/doc_tensorflow_python/dict  
 
 # os.path  
 os.path包含了很多文件、文件夹操作的方法。下面列出：
