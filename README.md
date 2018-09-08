@@ -92,6 +92,22 @@ vim ，linux与 Windows 的最大不同是，通常不再使用 IDE，取而代�
 git，该命令是项目管理必备的，基本命令要熟悉；git clone，拷贝项目；git add，添加文件；git commit，提交修改说明；git push，正式提交代码；git pull，拉取远程代码。  
 ssh，远程服务器连接，scp 远程和本地机器文件拷贝。  
 Shell 脚本编程，我们经常需要用 Shell 脚本批量处理，所以 Shell 的编程也需要学习。  
+--增  
+mkdir 创建文件夹  
+touch 创建文件  
+cp 复制  
+--改  
+mv 移动  
+vi 新建/修改文件  
+--删  
+rm 删除文件夹
+rm -f 删除文件  
+--查
+cd 进入目录
+ls 查看信息
+pwd 显示当前路径
+find / -name file1 查找/目录下文件 ‘/’表示根目录
+
 # python
 * strip  
 Python strip() 方法用于移除字符串头尾指定的字符（默认为空格）或字符序列。  
