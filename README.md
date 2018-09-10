@@ -32,6 +32,7 @@ imshow(img)
 * K.learning_phase()  
 返回训练模式/测试模式的flag，该flag是一个用以传入Keras模型的标记，以决定当前模型执行于训练模式下还是测试模式下.  
 1:training mode，0：test mode  
+keras在一个文件导入某个模块，如果该模块也要导入其他模块，则导入时，目录应已最初级的运行文件为基准  
 
 # tensorflow
 keras与tensorflow联合编程  
