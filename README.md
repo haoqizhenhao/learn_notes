@@ -1,6 +1,12 @@
 # learn_notes
 ## W3C SCHOOL 词典  
 https://www.w3cschool.cn/dict/  
+http://www.runoob.com/python3/python3-tutorial.html  
+## 深度学习技巧总结  
+1、Adam优化器，用 TensorFlow 时要注意：如果保存和恢复模型权重，请记住在设置完AdamOptimizer 后设置 Saver，因为 ADAM 也有需要恢复的状态（即每个权重的学习率）。  
+2、方差缩放初始化，看起来像tf.reemaner.variance_scaling_initializer()，比常规的高斯函数、截尾正态分布（truncated normal）和 Xavier 能更好地泛化/缩放。  
+3、归一化输入数据，先缩放数据再归一化
+
 # numpy
 e=np.eye(3);e
 array([[ 1.,  0.,  0.],
