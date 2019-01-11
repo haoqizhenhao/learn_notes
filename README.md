@@ -118,6 +118,25 @@ ls 查看信息
 pwd 显示当前路径  
 find / -name file1 查找/目录下文件 ‘/’表示根目录  
 
+linux 下shell中if的“-e，-d，-f”是什么意思  
+-e filename 如果 filename存在，则为真
+-d filename 如果 filename为目录，则为真 
+-f filename 如果 filename为常规文件，则为真
+-L filename 如果 filename为符号链接，则为真
+-r filename 如果 filename可读，则为真 
+-w filename 如果 filename可写，则为真 
+-x filename 如果 filename可执行，则为真
+-s filename 如果文件长度不为0，则为真
+-h filename 如果文件是软链接，则为真
+filename1 -nt filename2 如果 filename1比 filename2新，则为真。
+filename1 -ot filename2 如果 filename1比 filename2旧，则为真。
+--------------------- 
+作者：栎枫 
+来源：CSDN 
+原文：https://blog.csdn.net/superbfly/article/details/49274889 
+版权声明：本文为博主原创文章，转载请附上博文链接！
+
+
 # python
 * strip  
 Python strip() 方法用于移除字符串头尾指定的字符（默认为空格）或字符序列。  
